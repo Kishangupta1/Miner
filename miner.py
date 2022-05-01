@@ -68,7 +68,7 @@ def plumber(plum_file) -> 'list of pages as images':
 
 
 in_file_loc = 'visualise_bbox_more_pages'
-out_file_loc = 'visualise_bbox_more_pages'
+out_file_loc = ''
 for files in glob.glob(in_file_loc + '/*.pdf'):
     file_name = files.split("\\")[-1]
     file_name_only = file_name.split(".")[0]
