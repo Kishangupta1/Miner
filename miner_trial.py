@@ -1,5 +1,5 @@
 from io import StringIO
-
+from pdfminer.pdfparser import PDFParser
 from pdfminer.converter import TextConverter
 from pdfminer.converter import PDFPageAggregator
 from pdfminer.layout import LAParams
@@ -7,7 +7,7 @@ from pdfminer.layout import LTTextBox, LTTextLine, LTChar, LTTextContainer
 from pdfminer.pdfdocument import PDFDocument
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.pdfpage import PDFPage
-from pdfminer.pdfparser import PDFParser
+
 
 # output_string = StringIO()
 # with open(file + '.pdf', 'rb') as in_file:

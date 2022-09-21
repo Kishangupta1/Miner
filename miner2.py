@@ -6,10 +6,11 @@ from pdfminer.pdfdocument import PDFDocument
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.pdfpage import PDFPage
 from pdfminer.pdfparser import PDFParser
-import os
+
 import glob
 in_path = "check"  # i/p dir
 out_path = "check"  # o/p dir
+import os
 
 for files in glob.glob(in_path + '/*.pdf'):
     print(f'\nparsing file: {files}')
